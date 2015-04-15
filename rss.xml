@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>actin.io</title><link>http://actin.io/</link><description>Blog about science and programming</description><atom:link type="application/rss+xml" rel="self" href="http://actin.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Wed, 15 Apr 2015 21:23:11 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adobe password leak analyzed with pandas and Python</title><link>http://actin.io/posts/adobe-password-leak-analyzed-with-pandas-and-python.html</link><dc:creator>Sebastian Schmidt</dc:creator><description>&lt;div&gt;&lt;p&gt;I recently found out that one of my throwaway email-accounts was
+in the Adobe password leak. I wanted to see what was
+out there and downloaded the leaked data. The leaked data looks like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;some ID&amp;gt;-|-&amp;lt;username, mostly missing&amp;gt;-|-&amp;lt;email&amp;gt;-|-&amp;lt;password hash&amp;gt;-|-&amp;lt;password hint&amp;gt;|--
+103238705-|--|-asdgagr@yahoo.com-|-BB4e6X+b2xLioxG6CatHBw==-|-boyfriend|--
+103238706-|--|-fasggfso@hotmail.com-|-Cm8mAzxAiwzioxG6CatHBw==-|-dance|--
+103238707-|--|-witdfhadki@gmail.com-|-n+TZlu41zyHioxG6CatHBw==-|-|--
+103238708-|--|-isdfahdh8@gmail.com-|-FAniAwP+U13ioxG6CatHBw==-|-|--
+103238709-|--|-ojaadf@yahoo.com-|-kxiV+a47bSlf+E5Ulu/AzA==-|-newest|--
+103238710-|--|-sahjg@hotmail.com-|-UimSy9NunUU=-|-dog|--
+&lt;/pre&gt;
+&lt;p&gt;I hacked&lt;/p&gt;
+&lt;!--  --&gt;&lt;/div&gt;</description><guid>http://actin.io/posts/adobe-password-leak-analyzed-with-pandas-and-python.html</guid><pubDate>Wed, 15 Apr 2015 20:38:53 GMT</pubDate></item><item><title>Backup and Restore PostgreSQL from Openshift</title><link>http://actin.io/posts/backup-and-restore-postgresql-from-openshift.html</link><dc:creator>Sebastian Schmidt</dc:creator><description>&lt;div&gt;&lt;p&gt;I have my blog hosted on openshift using django.
+This is how i back up a the postgres database, copy it to my local computer, and restore into a local database. The backup uses this snippet which u can use as a cron job. I ssh'ed into my app:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+rhc ssh myappname
+&lt;/pre&gt;
+&lt;p&gt;executed the lines from this &lt;a class="reference external" href="https://gist.github.com/skyebook/3407646"&gt;snippet&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-1"&gt;&lt;/a&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-2"&gt;&lt;/a&gt;&lt;span class="c"&gt;# Backs up the OpenShift PostgreSQL database for this application&lt;/span&gt;
+&lt;a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-3"&gt;&lt;/a&gt;&lt;span class="c"&gt;# by Skye Book&lt;/span&gt;
+&lt;a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-4"&gt;&lt;/a&gt;&lt;span class="nv"&gt;NOW&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date +&lt;span class="s2"&gt;"%Y-%m-%d"&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-5"&gt;&lt;/a&gt;&lt;span class="nv"&gt;FILENAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$OPENSHIFT_DATA_DIR&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$OPENSHIFT_APP_NAME&lt;/span&gt;&lt;span class="s2"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;$NOW&lt;/span&gt;&lt;span class="s2"&gt;.backup.sql.gz"&lt;/span&gt;
+&lt;a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-6"&gt;&lt;/a&gt;pg_dump &lt;span class="nv"&gt;$OPENSHIFT_APP_NAME&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; gzip &amp;gt; &lt;span class="nv"&gt;$FILENAME&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;Now you can copy the database to your local folder:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+rhc scp myappname download ./ app-root/data/myappname.2015-03-27.backup.sql.gz
+&lt;/pre&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;./&lt;/tt&gt; copies into the current working directory.
+Now create a new database in pgadmin and restore the data to it:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+psql -d nameofnewdb -U username -f myappname.2015-03-27.backup.sql
+&lt;/pre&gt;
+&lt;p&gt;Now you can connect the dhango app to your local database.&lt;/p&gt;&lt;/div&gt;</description><guid>http://actin.io/posts/backup-and-restore-postgresql-from-openshift.html</guid><pubDate>Wed, 15 Apr 2015 20:31:49 GMT</pubDate></item><item><title>first</title><link>http://actin.io/posts/first.html</link><dc:creator>Sebastian Schmidt</dc:creator><description>&lt;div&gt;&lt;p&gt;test
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;
+&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.&lt;/p&gt;
+&lt;p&gt;The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also r&lt;/p&gt;&lt;/div&gt;</description><guid>http://actin.io/posts/first.html</guid><pubDate>Mon, 13 Apr 2015 16:08:27 GMT</pubDate></item><item><title>Welcome to Nikola</title><link>http://actin.io/posts/welcome-to-nikola.html</link><dc:creator>Roberto Alsina</dc:creator><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="http://farm1.staticflickr.com/138/352972944_4f9d568680_z.jpg?zz=1"&gt;&lt;img alt="Nikola Tesla Corner by nicwest, on Flickr" class="thumbnail" src="http://farm1.staticflickr.com/138/352972944_4f9d568680.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;If you can see this in a web browser, it means you have managed to install Nikola,
+and build a site using it. Congratulations!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;You can read the manual &lt;a class="reference external" href="http://actin.io/stories/handbook.html"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You can learn more about Nikola at &lt;a class="reference external" href="http://getnikola.com"&gt;http://getnikola.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You can see a demo photo gallery &lt;a class="reference external" href="http://actin.io/galleries/demo/index.html"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Demo usage of listings &lt;a class="reference external" href="http://actin.io/stories/listings-demo.html"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Demo of slideshows &lt;a class="reference external" href="http://actin.io/stories/slides-demo.html"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Demo of Bootstrap &lt;a class="reference external" href="http://actin.io/stories/bootstrap-demo.html"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Send feedback to &lt;a class="reference external" href="mailto:ralsina@netmanagers.com.ar"&gt;ralsina@netmanagers.com.ar&lt;/a&gt;!&lt;/p&gt;&lt;/div&gt;</description><category>blog</category><category>demo</category><category>nikola</category><category>python</category><guid>http://actin.io/posts/welcome-to-nikola.html</guid><pubDate>Sat, 31 Mar 2012 02:00:00 GMT</pubDate></item></channel></rss>
