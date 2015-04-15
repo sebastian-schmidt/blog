@@ -1,0 +1,26 @@
+.bgwrapper{
+   border:0;
+   background: url('/assets/imgs/bg_white_sands2.png')  left bottom;
+   height: 100px;
+}
+
+
+body {
+position: relative;
+padding-top: 0px;
+
+/*background-color: #ddd;*/
+
+
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: #ddd;*/
+}
+/*.navbar-default {
+  background-image: -webkit-linear-gradient(top, #E0E0EE 0%, #E0E0EE 100%);
+  background-image: #E0E0EE;
+}*/
