@@ -390,8 +390,8 @@ REDIRECTIONS = []
 
 # For user.github.io OR organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.
-GITHUB_SOURCE_BRANCH = 'master'
-GITHUB_DEPLOY_BRANCH = 'gh-pages'
+GITHUB_SOURCE_BRANCH = 'deploy'
+GITHUB_DEPLOY_BRANCH = 'master'
 
 # The name of the remote where you wish to push to, using github_deploy.
 GITHUB_REMOTE_NAME = 'origin'
@@ -561,7 +561,7 @@ GITHUB_REMOTE_NAME = 'origin'
 # }
 
 # Show only teasers in the index pages? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
