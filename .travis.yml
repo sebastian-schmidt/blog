@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - '3.4'
+
+install:
+  - pip install -r requirements.txt
+
+script: nikola build
+  - cd output
+  # - git config --global user.email ${GH_EMAIL}
+  # - git config --global user.name ${GH_NAME}
+  - git add *
+  - git commit -m "Travis CI autocommit from travis build ${TRAVIS_BUILD_NUMBER}"
+  - git push origin master
