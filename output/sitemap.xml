@@ -6,47 +6,47 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://actin.io/2012/index.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/2015/index.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/archive.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/categories/blog.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/categories/cat_nikola.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/categories/demo.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/categories/index.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/categories/nikola.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/categories/python.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/galleries/demo/index.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/galleries/index.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/index.html</loc>
@@ -54,90 +54,90 @@
  </url>
  <url>
   <loc>http://actin.io/listings/__pycache__/index.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/listings/hello.py.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/listings/index.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/posts/adobe-password-leak-analyzed-with-pandas-and-python.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/posts/backup-and-restore-postgresql-from-openshift.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/posts/first.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/posts/welcome-to-nikola.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/a-study-in-scarlet.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/about-nikola.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/bootstrap-demo.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/charts.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/creating-a-theme.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/extending.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/handbook.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/internals.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/listings-demo.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/quickref.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/quickstart.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/slides-demo.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/social_buttons.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/theming.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://actin.io/stories/upgrading-to-v6.html</loc>
-  <lastmod>2015-04-15</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
 </urlset>
