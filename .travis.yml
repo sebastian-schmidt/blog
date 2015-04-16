@@ -6,7 +6,7 @@ python:
 install:
   - pip install -r requirements.txt
 
-script: nikola build
+script: nikola list
 
 after_success:
   - cd output
