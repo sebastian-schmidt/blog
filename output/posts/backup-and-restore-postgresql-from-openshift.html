@@ -8,12 +8,7 @@ article: http://ogp.me/ns/article#
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Backup and Restore PostgreSQL from Openshift | actin.io</title>
 
-                <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
-            <link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+                <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 
                 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
@@ -132,12 +127,12 @@ This is how i back up a the postgres database, copy it to my local computer, and
 rhc ssh myappname
 </pre>
 <p>executed the lines from this <a class="reference external" href="https://gist.github.com/skyebook/3407646">snippet</a>:</p>
-<pre class="code bash"><a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-1"></a><span class="c">#!/bin/bash</span>
-<a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-2"></a><span class="c"># Backs up the OpenShift PostgreSQL database for this application</span>
-<a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-3"></a><span class="c"># by Skye Book</span>
-<a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-4"></a><span class="nv">NOW</span><span class="o">=</span><span class="s2">"</span><span class="k">$(</span>date +<span class="s2">"%Y-%m-%d"</span><span class="k">)</span><span class="s2">"</span>
-<a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-5"></a><span class="nv">FILENAME</span><span class="o">=</span><span class="s2">"</span><span class="nv">$OPENSHIFT_DATA_DIR</span><span class="s2">/</span><span class="nv">$OPENSHIFT_APP_NAME</span><span class="s2">.</span><span class="nv">$NOW</span><span class="s2">.backup.sql.gz"</span>
-<a name="rest_code_90f63af1d9b54efc9c93edb32ce48138-6"></a>pg_dump <span class="nv">$OPENSHIFT_APP_NAME</span> <span class="p">|</span> gzip &gt; <span class="nv">$FILENAME</span>
+<pre class="code bash"><a name="rest_code_330d8bc9662243fd8d7457adaec06a2d-1"></a><span class="c">#!/bin/bash</span>
+<a name="rest_code_330d8bc9662243fd8d7457adaec06a2d-2"></a><span class="c"># Backs up the OpenShift PostgreSQL database for this application</span>
+<a name="rest_code_330d8bc9662243fd8d7457adaec06a2d-3"></a><span class="c"># by Skye Book</span>
+<a name="rest_code_330d8bc9662243fd8d7457adaec06a2d-4"></a><span class="nv">NOW</span><span class="o">=</span><span class="s2">"</span><span class="k">$(</span>date +<span class="s2">"%Y-%m-%d"</span><span class="k">)</span><span class="s2">"</span>
+<a name="rest_code_330d8bc9662243fd8d7457adaec06a2d-5"></a><span class="nv">FILENAME</span><span class="o">=</span><span class="s2">"</span><span class="nv">$OPENSHIFT_DATA_DIR</span><span class="s2">/</span><span class="nv">$OPENSHIFT_APP_NAME</span><span class="s2">.</span><span class="nv">$NOW</span><span class="s2">.backup.sql.gz"</span>
+<a name="rest_code_330d8bc9662243fd8d7457adaec06a2d-6"></a>pg_dump <span class="nv">$OPENSHIFT_APP_NAME</span> <span class="p">|</span> gzip &gt; <span class="nv">$FILENAME</span>
 </pre>
 <p>Now you can copy the database to your local folder:</p>
 <pre class="literal-block">
@@ -181,11 +176,7 @@ psql -d nameofnewdb -U username -f myappname.2015-03-27.backup.sql
     </div>
 </div>
 
-            <script src="../assets/js/jquery.min.js"></script>
-            <script src="../assets/js/bootstrap.min.js"></script>
-            <script src="../assets/js/moment-with-locales.min.js"></script>
-            <script src="../assets/js/fancydates.js"></script>
-        <script src="../assets/js/jquery.colorbox-min.js"></script>
+            <script src="../assets/js/all-nocdn.js"></script>
     
 
     <script>$('a.image-reference:not(.islink)').colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
