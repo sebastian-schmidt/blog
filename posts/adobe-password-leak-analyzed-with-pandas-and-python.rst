@@ -21,6 +21,6 @@ out there and downloaded the leaked data. The leaked data looks like this:
 	103238709-|--|-ojaadf@yahoo.com-|-kxiV+a47bSlf+E5Ulu/AzA==-|-newest|--
 	103238710-|--|-sahjg@hotmail.com-|-UimSy9NunUU=-|-dog|--
 
-I hacked
+I put a small script together
 
 .. 
