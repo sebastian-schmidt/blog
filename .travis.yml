@@ -6,12 +6,21 @@ python:
 install:
   - pip install -r requirements.txt
 
-script: nikola list
+before_script:
+  - Echo -e "Host github.com \ n \ tStrictHostKeyChecking no \ n" >> ~ / .ssh / config
+  - git config --global user.email "me via Travic-ci"
+  - git config --global user.name "travis-ci@travis.org"
+  - git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io -b master output > /dev/null
+
+script:
+  - nikola list
 
 after_success:
   - cd output
-  - git config --global user.email ${GH_EMAIL}
-  - git config --global user.name ${GH_NAME}
-  - git add *
-  - git commit -m "Travis CI autocommit from travis build ${TRAVIS_BUILD_NUMBER}"
-  - git push origin https://github.com/sebastian-schmidt/blog.git
+  - git add .
+  - git commit -m "[ci skip] Update output from Travis CI"
+  - git push origin master
+
+env:
+  global:
+    secure: "ckZl8qmdm52gFcftJXfhwNTLWhXbdAhZo0F55a5oQ0dxXr3gXQste07PxHd9X0KGe3V/LL5/t8TSrATaP4RxFUBhnMbHmE+YTPHjJ/fkCiNuwVCuWWGzag7YyNrg+tyK749SkCPtWIze/W8UODDQL4Ayv72iqMFTPCcH/h1YEQw=
