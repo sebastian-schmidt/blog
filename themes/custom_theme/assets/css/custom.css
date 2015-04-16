@@ -15,7 +15,7 @@ pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-right: 0em !important;
 }
 
-tt.literal { background-color: #eeeeee }
+tt.literal { background-color: #eeeeee !important }
 
 }
 .container-fluid {
