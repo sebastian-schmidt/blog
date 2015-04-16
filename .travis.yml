@@ -7,8 +7,8 @@ install:
   - pip install -r requirements.txt
 
 before_script:
-  - git config --global user.email "me via Travic-ci"
-  - git config --global user.name "travis-ci@travis.org"
+  - git config --global user.email "travis-ci@travis.org"
+  - git config --global user.name "me via travis ci"
   - git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io -b master output > /dev/null
 
 script:
