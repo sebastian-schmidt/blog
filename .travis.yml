@@ -13,7 +13,7 @@ before_script:
   - git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io -b master output > /dev/null
 
 script:
-  - nikola list
+  - nikola build
 
 after_success:
   - cd output
