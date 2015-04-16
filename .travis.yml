@@ -14,4 +14,4 @@ after_success:
   - git config --global user.name ${GH_NAME}
   - git add *
   - git commit -m "Travis CI autocommit from travis build ${TRAVIS_BUILD_NUMBER}"
-  - git push origin master
+  - git push origin https://github.com/sebastian-schmidt/blog.git
