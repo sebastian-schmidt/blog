@@ -1755,15 +1755,40 @@ ul.auto-toc {
         #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
 
+.bgwrapper{
+   border:0;
+   background: url('/assets/imgs/bg_white_sands2.png')  left bottom;
+   height: 100px;
+}
+
+h1 a{
+    color:#5A321C !important;
+}
+
+
+
 pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 0em !important;
   margin-right: 0em !important;
 }
 
+tt.literal {
+   background-color: #eeeeee !important;
+}
 
 body {
     margin-top: 0px;
+    position: relative;
+    padding-top: 0px;
 }
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 #container {
     width: 960px;
@@ -1939,31 +1964,3 @@ article.post-micro {
 .row {
     margin: 0;
 }
-
-.bgwrapper{
-   border:0;
-   background: url('/assets/imgs/bg_white_sands2.png')  left bottom;
-   height: 100px;
-}
-
-body {
-position: relative;
-padding-top: 0px;
-}
-
-pre.literal-block, pre.doctest-block, pre.math, pre.code {
-  margin-left: 0em !important;
-  margin-right: 0em !important;
-}
-
-tt.literal { 
-   background-color: #eeeeee !important; 
-}
-
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
