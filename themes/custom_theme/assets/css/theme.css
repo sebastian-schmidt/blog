@@ -23,6 +23,7 @@ body {
     margin-top: 0px;
     position: relative;
     padding-top: 0px;
+    background-color: rgba(14,115,149,.13);
 }
 
 .container-fluid {
