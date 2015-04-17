@@ -1,12 +1,31 @@
+.bgwrapper{
+   border:0;
+   background: url('/assets/imgs/bg_white_sands2.png')  left bottom;
+   height: 100px;
+}
+
 pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 0em !important;
   margin-right: 0em !important;
 }
 
+tt.literal {
+   background-color: #eeeeee !important;
+}
 
 body {
     margin-top: 0px;
+    position: relative;
+    padding-top: 0px;
 }
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 #container {
     width: 960px;
