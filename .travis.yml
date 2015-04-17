@@ -2,6 +2,8 @@ language: python
 
 python:
   - '3.4'
+  
+cache: pip
 
 install:
   - pip install -r requirements.txt
@@ -13,6 +15,7 @@ before_script:
   - git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io -b master output > /dev/null
 
 script:
+  - nikola clean
   - nikola build
 
 after_success:
