@@ -25,7 +25,7 @@ SITE_URL = "http://actin.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://actin.io/"
-BLOG_EMAIL = "schmidt.sebi@gmail.com"
+BLOG_EMAIL = "info.actin.io@gmail.com"
 BLOG_DESCRIPTION = "Blog about science and programming"  # (translatable)
 
 # Nikola is multilingual!
