@@ -312,7 +312,7 @@ select{background:#fff!important}
 .glyphicon-menu-up:before{content:"\e260"}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}
-body{font-family:Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;font-size:16px;line-height:1.42857143;color:#5a321c;background-color:rgba(14,115,149,.13)}
+body{font-family:"Trebuchet MS","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.42857143;color:#5a321c;background-color:rgba(14,115,149,.13)}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{color:#14558c;text-decoration:none}
 a:focus,a:hover{color:#0a2c49;text-decoration:underline}
