@@ -88,7 +88,7 @@ Using `pandas <http://pandas.pydata.org/>`__ this is pretty straightforward. Sin
 .. code:: python
 
     import time
-    filename= r'D:\cd\t2\users.tar\users\converted.tsv'
+    filename= 'converted.tsv'
     import pandas as pd
     tic = time.clock()
     adobeDataFrames=pd.read_csv(filename, nrows=10000000, delimiter='\t', usecols=[2,3,4,5], names=['emailfront','emailprovider','passwordhash','hint'])
