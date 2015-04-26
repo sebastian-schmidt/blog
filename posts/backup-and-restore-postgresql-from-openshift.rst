@@ -39,4 +39,4 @@ Now create a new database in pgadmin and restore the data to it:
 
 	psql -d nameofnewdb -U username -f myappname.2015-03-27.backup.sql
 
-Now you can connect the django app to your local database.
+Now you can connect the dhango app to your local database.
