@@ -1,0 +1,124 @@
+ 
+Abstract
+Temperature has a reliable and nearly instantaneous influence on mechanical responses of cells. As recently published, MCF-10A normal epithelial breast cells follow the time-temperature superposition (TTS) principle. Here, we measured thermorheological behaviour of eight common cell types within physiologically relevant temperatures and applied TTS to creep compliance curves. Our results showed that superposition is not universal and was seen in four of the eight investigated cell types. For the other cell types, transitions of thermorheological responses were observed at 36 °C. Activation energies (EA) were calculated for all cell types and ranged between 50 to 150 kJ/mol. The scaling factors of the superposition of creep curves were used to group the cell lines into three categories. They were dependent on relaxation processes as well as structural composition of the cells in response to mechanical load and temperature increase. This study supports the view that temperature is a vital parameter for comparing cell rheological data and should be precisely controlled when designing experiments.
+
+ 
+1.	Introduction
+Temperature is known to affect mechanical properties of any viscoelastic material. Without more information on the thermal dependence of the cells polymer structure and its related processes, we are limited in our deductions from rheological experiments. In 2013, time-temperature superposition (TTS) has been proposed to delineate creep compliance behaviour of MCF-10A breast epithelial cells [1]. While TTS is a well known concept in polymer physics, it was remarkable that cell deformation data can be matched to this model, considering that cells are a heterogeneous system composed of different structure proteins.
+Thermal behaviour of cells is determined by two elementary parts: cytoplasm dominating with viscous contribution and cross-linked polymers forming a viscoelastic material [2]. Mechanical properties of cells and their responses to external forces as well as thermal variations are integral parts of cellular functions like embryogenesis, wound healing, cell division, and metastasis [3–6]. Cell rheology helps to describe dynamics and composition of the cytoskeleton as well as underlying molecular processes [7]. While rheological methods are common in cell biology [8], temperature impact has only recently been integrated in biomechanical cell studies or models [9–11]. For instance temperature sensitive ion channels have been found to govern response to heat and mechanical stress [12–14].
+We hypothesized that the known model for TTS would be universal for all cell types and wanted to see if there are different types of behaviour. For a more diverse understanding of TTS, eight commonly used cell lines were examined at five different temperatures and their activation energies calculated.
+2.	Methods and Materials
+Thermorheological setup
+An optical stretcher setup [15] was used to investigate mechanical deformations of single suspended cells from eight different cell lines at various temperatures. This setup has been previously described in detail, see [1,16]. Briefly, cells were held in between two counter propagating laser beams (? = 1064 nm). Due to applied laser power, cells experienced both an optical force pulling on the cell membrane (s ˜ 10 Pa peak stress [16]) and an increase in temperature caused by laser light absorption (?T ˜ 26 °C/W [1,17]). 
+During the cell deformation measurement, the microscope and stage temperature Tsetup was held at 11 °C. The step stress is applied for 2 s to the cell. Thus, during the stretch laser excitation, trapped cells were heated up to approximately 37 °C (Teff between 28 °C and 44 °C). All measurements were done in the same setup under similar conditions, providing best comparability. Cells were stretched by a randomly chosen stretch laser power between 680 mW and 1,320 mW, and showed creep behaviour. Cell deformations were analysed afterwards by a self-written edge detection algorithm in Matlab (Mathworks, USA), explained in [15]. Since optically induced surface stress s0 increases linearly with the applied laser power [18,19], the observed cellular deformation was directly translated into creep compliance J(t):
+	 ,	 (1)
+Assuming linear viscoelastic cellular response  . Creep experiments are described via:
+	 .	(2)
+Creep Compliance Ji curves, measured at Ti, were plotted logarithmically and shifted to overlap at reference Temperature Tref (TTS), following [12]. Each curve Ji contained over 100 cells. For cell lines that behave thermorheologically simple, only a time shift factor   is necessary. If the creep curves were scaled by an additional modulus shift factor  , cells were  considered thermorheologically complex [20]. If  shows a simple Arrhenius dependency [21],
+	   ,	(3)
+it was possible to calculate a constant activation energy EA (R is universal gas constant). Assuming that cells behave like glassy material [22–24], activation energy becomes temperature dependent near glass transition temperature Tg and   above Tg is often represented by the William-Landel-Ferry (WLF) equation [19,20]:
+	 ,  	(4)
+with C1 and C2 as empirical parameters. Master curves were constructed from creep compliance curves Ji via a custom-made algorithm. A reference temperature was selected as Tref = 37 °C and all other curves were scaled according equation (2), with  and   being varied to maximize overlap. 
+Cell culture
+All cell lines except keratinocytes were cultured in in humid atmosphere at 37°C with 5% CO2.
+MCF-10A cell line (CRL-10317) was maintained in a 1:1 mixture of Dulbecco's Modified Eagle Medium/Ham's F12 with L-Glutamine (E15-813, PAA) supplemented with 5% Horse Serum (A15-151, PAA), 20 ng/ml Epidermal growth factor, 10 µg/ml Insulin (I6634, Sigma-Aldrich), 100 ng/ml Cholera toxin, 500 ng/ml hydrocortisone and 100 U/ml penicillin/streptomycin.
+MCF-7 cell line was maintained in Minimum Essential Medium (E15-024, PAA) supplemented with 10% fetal calf serum (A15-043, PAA), 1% Non-essential amino acids, 0.5% bovine insulin stock solution dissolved at 2 mg/ml in diluted HCl (pH 2-3), 10 µg/ml Insulin (I6634, Sigma-Aldrich), 110 µg/ml Sodium Pyruvate (P5280, Sigma-Aldrich) and 100 U/ml penicillin/streptomycin.
+MDA-MB-436 and MDA-MB-231 cell line were maintained in Dulbecco's Modified Eagle Medium supplemented with 10% calf serum, and 100 U/ml penicillin/streptomycin.
+Chinese hamster ovarian CHO-K1 cell line was maintained in ATCC-formulated F-12K Medium supplemented with 10% fetal bovine serum.
+BALB/3T3 clone A31 mouse fibroblast cell line and SV-T2 transformed mouse fibroblast cell line were maintained in Dulbecco's Modified Eagle Medium supplemented with 10% calf serum, 1% 1M HEPES (H4034, Sigma-Aldrich) and 100 U/ml penicillin/streptomycin.
+Mouse Keratinocytes were derived from strain C57Bl6 on 3T3J2 feeders and spontaneously immortalized. Cells were maintained at 32 °C with 5% CO2 in Dulbecco's Modified Eagle Medium/Ham's F12 low calcium (F-9092, Biochrom) supplemented with 10% (v/v), 10% Chelex 100 treated fetal calf serum (A15-151, PAA), 0.18 mM adenine, 0.5 µg/mL hydrocortisone, 5 µg/mL insulin, 100 pM cholera toxin (all Sigma-Aldrich), 10 ng/mL EGF, 100 U/mL sodium pyruvate, 100 µg/mL penicillin/streptomycin, and 2 mM Glutamax (all Invitrogen).
+For all measurements, cells were detached with 0.025% (w/v) trypsin-EDTA in PBS, resuspended in ~10 ml medium and centrifuged at 100 g for 4 minutes. Medium was aspirated off and cell pellets were suspended in ~1 ml medium for a measurement concentration of ~5 × 106 cells/ml. Cells were from a single culture flask for each experiment to exclude differences in passage number or culturing time.
+
+3.	Results and Discussion
+Eight different cell types were stretched by five different laser powers. Thermorheologically simple behaviour could not be observed for every cell line. Balb/3T3 and MCF-10A exhibited simple behaviour, i.e. the creep curves were shifted horizontally only via the time shift factor aT, as seen in Figure 1. All values for aT and bT are given in the appendix: Data tables T1 and T2.
+Cells exhibit an increase of compliance at higher temperatures caused by a loss of viscosity due to increased temperature. This indicates that temperature change is the main independent variable affecting viscosity of these cell lines. Plotting the time shift factors aT  over Ti – Tref, as is usual for dense polymer solutions of high molecular weight at temperatures near glass transition [25,26], reveals linear dependency. Thus, the Arrhenius equation (5) is sufficient to describe the observed dependency of aT around Teff = 37 °C and provides a value for the activation energy (EA). With Tref = 36 °C, the activation energy of MCF-10A cells is EA = 85 kJ/mol and of Balb/3T3 cells is EA = 84 kJ/mol. Both cell types, originating from different tissues, have a similar and linear sensitivity to temperature.
+ 
+Figure 1. Creep compliance curves of MCF-10A (A) and Balb/3T3 (B). Both cell types show thermorheologically simple behaviour. Cellular creep response is plotted logarithmically for five different laser powers (grey curves). Coloured curves are scaled to overlap via time shift factor aT, indicated by arrows. Modulus shift bT is kept constant to one and is not needed for scaling. Stretch powers Pstretch and corresponding temperature during stretch Teff are color-coded. Activation energies of both cell types are approximately 85 kJ/mol.
+MCF-7 cells behaved simply except at Teff = 44 °C, where additional vertical scaling via modulus shift factor bT was necessary for superposition. Stiffening over a certain temperature threshold had been previously observed for the MCF-10A cells in Kießling et al. [1]. Due to the short timescales of the temperature change in our experiments, a scaling of bT implied instant structural transformation of the cytoskeleton or other intracellular structures e.g. the cell's nucleus. MCF-7 nuclei are known to contract in the Optical Stretcher around Teff = 45 °C [11]. Due to cross-links of structure proteins, this contraction affects the whole cell, which appears here to stiffen the cell requiring an additional scaling via bT. With an activation energy of EA = 142 kJ/mol, MCF-7 cells have the highest sensitivity to temperature.
+ 
+Figure 2. MCF-7 (A) cells and Keratinocytes (B) are superposed with additional scaling via bT indicating thermorheologically complex behaviour. Coloured curves are scaled to overlap horizontally via aT, and vertically via bT. Activation energies of both cell types are similar around 140 kJ/mol.
+Keratinocytes behave similar to MCF-7 cells, i.e. their curves do not match just by scaling with aT. Therefore, all creep curves need to be additionally adapted via bT to overlap properly. Again, bT decreases for higher temperatures, suggesting changes in elasticity-contributing structures for these short time scales and entropic mechanisms. Since the experiments were conducted around approximately Teff ˜ 37 °C, massive protein denaturing is unlikely. The activation energy for Keratinocytes was EA = 132 kJ/mol.
+Creep curves of the other four cell lines—CHO-K1, MDA-MB-231, MDA-MB-436, and SV-T2—did not overlap to form a master curve, even when incorporating both scaling factors, as shown in Figure 3. Curve shapes did not allow superposition via equation (2). However they were scaled by aT, to overlap during the beginning of the stretch, since the temperature influence is shorter. Activation energies were calculated from chosen scaling, but did not have the same meaning considering that they did not form a master curve. A quantification of the impact of temperature in terms of TTS (2) is only significant when curves superpose.
+ 
+Figure 3. CHO-K1 (A), MDA-MB436 (B), MDA-MB231 (C) and SV-T2 (D) were not superimposable via TTS. Coloured curves are scaled to overlap at least at the beginning of the applied stress. Curves are scaled via aT to superpose for lower temperatures (turquoise and blue) and higher temperatures (orange and red) respectively and are separated by a transition regime around Teff = 36 °C. Activation energies are shown in brackets. They represent the value resulting from the chosen scaling while not being constant activation energies.
+For lower (28 °C and 32 °C) and for higher temperatures (40 °C and 44 °C) overlapping curves via scaling was achieved, i.e. turquoise and blue curves overlap best and respectively orange and red curves. At approximately Teff = 36 °C a transition of creep behaviour occurred. This could be indicative for a fundamental change in dominating relaxation processes between deformations at lower and higher temperatures. In that sense, thermorheological measurements could evolve to a powerful tool for the identification of main-load bearing structures in cells and for discerning their contribution to the mechanical properties on a whole cell level. 
+An artefact of the chosen scaling is that creep curves of higher temperatures deviate from curves at lower temperatures by becoming more compliant. For MDA-MB-231, MDA-MB-436, CHO-K1, and SV-T2 cells weakening or even bound breaking processes or other structural alterations leading to more compliance might occur within the cells during heating. This is contrary to the superposing cell lines. The 44 °C curve of MCF-7, for example, would appear less compliant, if it were scaled just with aT and overlap at the beginning of the stretch. Thus, different temperature dependent molecular mechanisms might play a role in cytoskeletal assembly. Further detailed investigations need to be conducted in order to resolve the exact underlying mechanisms of differences in relevant load bearing structures leading to cellular softening or stiffening in different cell types.
+Considering the stepwise temperature increase in conjunction with the applied step-stress, it is not trivial to apply an appropriate model to reflect the observed creep functions. The presented significant changes in thermorheological behaviour are visible by constructing the master curve during TTS. The advantage of TTS is that no assumptions of an explicit functional form of a creep compliance are necessary. The only assumptions are viscoelastic linearity and the validity of the main statement of TTS i.e. that temperature in the causes a rescaling of the time and the modulus axes.
+Cells are a complex compound of different polymers and TTS can be applied on a whole cell level. This would classify cellular matter as being a truly emergent material, in which the temperature dependencies of relaxation processes of the single components have merged into a single compound value. Cell types with no thermorheologically simple behaviour may have lower connectivity of cytoskeletal components. Different individual thermal properties of structural elements change their contribution towards the creep curve, making adaption by the modulus shift factor bT necessary.
+Glass transition might be another explanation for application of TTS, assuming only one thermally activated process dominates cellular response. With respect to the glassy character of cellular matter [23,27], one of the components may undergo a glass transition. During optical stretching, the cells experience an instant heating leading to a drop of viscosity within the cell. The effect of heating on cell mechanics results in an increased deformability of about 10% per Kelvin. With regard to heating and instantaneous loss of viscosity during optical stretcher measurements, cells reveal a linear mechanical cell response to the applied optical force.
+There are no comparative studies for thermal effects in single cells, fitting our time scale. However, qualitative similar results for adherent cells on longer time scales have been reported [10].
+In this study, we focused on physical properties and passive responses of cells rather than on biological alterations. Biological adaption processes during stretching may be excluded, since we only investigated short time responses, up to few seconds. Altered protein expression and delayed structural conversions in polymer networks (e.g. cytoskeleton) during heating need much more time, about minutes and hours [28]. 
+We propose single and complex thermorheology as a powerful approach for cell-rheological studies. Differences in the applicability of TTS provide deeper insight in cell mechanics, since no assumptions about an underlying model concerning material functions are necessary. The results demonstrate that the deformability of living cells strongly depends on temperature and differs qualitatively between various cell types.
+4.	Conclusions
+Temperature variations significantly affect mechanical properties of cells. Deformation changes of approximately 10% per degree Kelvin were observed for all cell lines, which was consistent with a drop in viscosity. Comparisons of cell lines show that thermorheologically simple behaviour is not universal in cells, but has been observed in certain cell types. Superposition of creep curves was not achieved for half of the cell lines due to nonlinear temperature dependence of intracellular processes and structural relaxation times. Scaling factors and comparison of creep curves provides valuable information about deformation processes in response to applied forces. Different characteristics of curves are related to composition and structure of the cytoskeleton providing more insight to the complex cellular assembly. Based on these finding we suggest incorporating temperature as a vital parameter when comparing cell rheology studies or for the design of future experiments.
+ 
+ 
+Appendix
+Data tables
+Tables 1-8 contain employed scaling factors aT and bT for each cell line.
+Table 1: Scaling factors for MCF-10.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.3714	1
+1.16 W	42.7246	0.6505	1
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	1.7634	1
+0.68 W	28.5197	3.4272	1
+
+Table 2: Scaling factors for Balb/3T3.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.5150	1
+1.16 W	42.7246	0.6590	1
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	1.7061	1
+0.68 W	28.5197	3.4070	1
+
+Table 3: Scaling factors for MCF-7.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.2321	0.6923
+1.16 W	42.7246	0.4602	1
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	2.5842	1
+0.68 W	28.5197	4.5378	1
+
+Table 4: Scaling factors for Keratinocytes.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.1848	0.6367
+1.16 W	42.7246	0.3622	0.7338
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	2.7436	1.0877
+0.68 W	28.5197	4.8236	1.2210
+
+Table 5: Scaling factors for CHO-K1.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.5356	1
+1.16 W	42.7246	0.7170	1
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	1.5302	1
+0.68 W	28.5197	2.1767	1
+
+Table 6: Scaling factors for MDA-MB-436.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.4425	1
+1.16 W	42.7246	0.5679	1
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	1.3050	1
+0.68 W	28.5197	2.4559	1
+
+Table 7: Scaling factors for MDA-MB-231.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.5940	1
+1.16 W	42.7246	0.8616	1
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	1.3466	1
+0.68 W	28.5197	2.3971	1
+
+Table 8: Scaling factors for SV-T2.
+Pstretch	Teff	aT	bT
+1.32 W	46.2671	0.4210	1
+1.16 W	42.7246	0.5206	1
+1.00 W	37.8974	1.0	1
+0.84 W	32.9508	1.6007	1
+0.68 W	28.5197	2.9824	1
+
+
+
