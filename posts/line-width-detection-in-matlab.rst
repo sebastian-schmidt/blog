@@ -17,7 +17,7 @@ common for physicists to reinvent the wheel.
 
 I prepared a few images to show how the Matlab script works. I used two different line sizes for gaussian type brush and 4 different widths for the hard edge pen tool. It should be fairly customizable to diffent approaches.
 
-.. figure:: images/lineswidth/lines_size20.png
+.. figure:: ../images/lineswidth/lines_size20.png
    :alt: Different strokes
    :align: center
 
