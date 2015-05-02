@@ -17,7 +17,7 @@ common for physicists to reinvent the wheel.
 
 I prepared a few images to show how the Matlab script works. I used two different line sizes for gaussian type brush and 4 different widths for the hard edge pen tool. It should be fairly customizable to diffent approaches.
 
-.. figure:: lineswidth/lines_size20.png
+.. figure:: images/lineswidth/lines_size20.png
    :alt: Different strokes
    :align: center
 
@@ -111,7 +111,7 @@ is going over from 0 to 180 degree). One peak is right
 over the borders at 0 and 179 degree. Another one is visible at 90
 degree. These two are the vertical one and horizontal one.
 
-.. figure:: export/output4lines.png
+.. figure:: images/lineswidth/output4lines.png
    :alt: Matlab output
    :align: center
 
@@ -160,7 +160,7 @@ This procedure queries a folder name and calculates the
 widths of all images inside. Afterwards it plots the resulting widths.
 I created a folder with single images of these lines:
 
-.. figure:: export/lines_pen.png
+.. figure:: images/lineswidth/lines_pen.png
    :alt: Matlab output
    :align: center
 
@@ -168,7 +168,7 @@ I created a folder with single images of these lines:
 
 And this was the output:
 
-.. figure:: export/pens.png
+.. figure:: imgages/lineswidth/pens.png
    :alt: Matlab output
    :align: center
 
