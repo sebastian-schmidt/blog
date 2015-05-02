@@ -15,7 +15,7 @@ common for physicists to reinvent the wheel.
 
 .. _this paper: http://www.ncbi.nlm.nih.gov/pubmed/17269626
 
-I prepared a few images to show how the Matlab script works. I used two different line sizes for gaussian type brush and 4 different widths for the hard edge pen tool. It should be fairly customizable to diffent approaches.
+I prepared a few images to show how the Matlab script works. I used two different line sizes for a gaussian type brush and 4 different widths for the hard edge pen tool. It should be fairly customizable to diffent approaches.
 
 .. figure:: ../images/lineswidth/lines_size20.png
    :alt: Different strokes
@@ -106,18 +106,18 @@ Two external function were used:
 * `fwhm <http://www.mathworks.com/matlabcentral/fileexchange/10590-fwhm>`_
 * `peakfit2d <http://www.mathworks.com/matlabcentral/fileexchange/26504-sub-sample-peak-fitting-2d/content/peakfit2d.m>`_
 
-You can see 4 peaks corresponding to the 4 strokes (or five beacuse one
+You can see 4 peaks corresponding to the 4 strokes (or five because one
 is going over from 0 to 180 degree). One peak is right
 over the borders at 0 and 179 degree. Another one is visible at 90
 degree. These two are the vertical one and horizontal one.
 
-.. figure:: images/lineswidth/output4lines.png
+.. figure:: ../images/lineswidth/output4lines.png
    :alt: Matlab output
    :align: center
 
    Matlab plot of Radon transform 
 
-In the upper left we see the input image. In ther upper right the plottet radon transform from0 to 179 degrees.
+In the upper left we see the input image. In the upper right is the plotted radon transform from 0 to 179 degrees.
 In the lower left, we have a little plus plotted into the most prominent peak.
 This is the one that will be used. In the lower right, we have the slice of the
 transform for the angle marked by the +. Now we can use the half width full maximum as a
@@ -160,7 +160,7 @@ This procedure queries a folder name and calculates the
 widths of all images inside. Afterwards it plots the resulting widths.
 I created a folder with single images of these lines:
 
-.. figure:: images/lineswidth/lines_pen.png
+.. figure:: ../images/lineswidth/lines_pen.png
    :alt: Matlab output
    :align: center
 
@@ -168,7 +168,7 @@ I created a folder with single images of these lines:
 
 And this was the output:
 
-.. figure:: imgages/lineswidth/pens.png
+.. figure:: ../images/lineswidth/pens.png
    :alt: Matlab output
    :align: center
 
