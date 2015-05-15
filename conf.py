@@ -802,13 +802,13 @@ SEARCH_FORM = """
 <!-- Custom search with Google-->
 <form id="search" action="//www.google.com/search" method="get"
 class="navbar-form pull-right">
-<input type="hidden" name="q" value="site:%s" />
+<input type="hidden" name="sitesearch" value="actin.io" />
 <input type="text" name="q" maxlength="255" results="0"
-placeholder="Search" style="margin-top: 4px;width:100px;"/>
+placeholder="Search" style="margin-top: 4px;width:100px;" />
 <input type="submit" value="Go" />
 </form>
 <!-- End of custom search -->
-""" % SITE_URL
+"""
 
 # Use content distribution networks for jQuery, twitter-bootstrap css and js,
 # and html5shiv (for older versions of Internet Explorer)
