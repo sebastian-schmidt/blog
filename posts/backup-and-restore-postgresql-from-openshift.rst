@@ -16,6 +16,7 @@ This is how i back up a the postgres database, copy it to my local computer, and
 
 executed the lines from this `snippet <https://gist.github.com/skyebook/3407646>`_:
 
+.. TEASER_END
 
 .. code:: bash
 

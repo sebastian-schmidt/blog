@@ -22,6 +22,8 @@ I prepared a few images to show how the Matlab script works. I used two differen
    :align: center
 
    Differently oriented lines with brush size 20
+   
+.. TEASER_END
 
 I want to check different orientations. All theses lines should be the same size.
 

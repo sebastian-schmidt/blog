@@ -24,6 +24,8 @@ Here's the relevant `xkcd <http://xkcd.com/1286/>`__
 .. figure:: http://imgs.xkcd.com/comics/encryptic.png
    :alt: xkcd encryptic
    :align: center
+   
+.. TEASER_END
 
 I put a small script together to convert the file to a tab-separated file. This is probably not necessary, but I didn't have to think much about it and it would be easier later on. I do all this with in an `Anaconda 3.4 <http://docs.continuum.io/anaconda/>`__ installation.
 
