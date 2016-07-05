@@ -18,13 +18,5 @@ after_success:
 - git add .
 - git commit -m "[ci skip] Update output from Travis CI"
 - git push origin master
-env:
-  global:
-    secure: DhIbCchXKNCP/0V7Px84qc1b92y9DWdkgkK8q2OjkjpnoDsD6bWP/4D6lcVOIqnq+I4FS1b2t4ZAcQ0O1iFMnOgTjkU4VJB5c+HVsksHM/fQljOBg+P6AQfu4pE+/kgb9bV4RSgFKybul7CZOHRVP6FseM2uRh15Yve7fX/GjbE=
-deploy:
-  provider: releases
-  api_key:
-    secure: HEQIj/cPFBTjInmDw0hh219BwkpCF4dkEMe/69VUnq/vrQelSt/Dvbn+ItW6WWAVLhhcVXuAU9+GDNDmdov0SMuSbJa08iNo8EaaADGu1rtLaYE9hhPFgZOTXB8BKu5yG9nOG2x3TAxEVr64K/RJXsyDaD/nnFjRVOqdo6rckKE=
-  file: ''
-  on:
-    repo: sebastian-schmidt/blog
+
+
