@@ -83,7 +83,7 @@ sample output:
 	12345990		name	gmail.com	 sKZcyHioxGNzioxG6CfCw	 dog
 
 
-I like the pseudo code style of python :-). My password hint is dog and I can see my hash. Now my interest was peaked and I wanted to see what I can learn from this dataset. Here, I thought it is a good idea to learn a bit about pandas. I come from a Matlab environment for data wrangling and wanted to see what python has to offer.
+I like the pseudo code style of python :-). My password hint is dog and I can see my hash. Now my interest was piqued and I wanted to see what I can learn from this dataset. Here, I thought it is a good idea to learn a bit about pandas. I come from a Matlab environment for data wrangling and wanted to see what python has to offer.
 
 Using `pandas <http://pandas.pydata.org/>`__ this is pretty straightforward. Since my computer doesn't have enough memory I used only the first 10000000 entries. I will probably next look into ways to work faster with that much data. Here is the iphyton notebook used:
 
