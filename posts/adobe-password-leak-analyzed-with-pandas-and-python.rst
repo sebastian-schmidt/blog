@@ -47,7 +47,7 @@ I put a small script together to convert the file to a tab-separated file. This 
 	        for i in in_file:
 	            try:
 	                text = in_file.readline()
-	                temp = []
+	                temp = dict()
 	                if text != '\n':
 	                    t= text.split('-|-')
 	                    email=t[2].split('@')
