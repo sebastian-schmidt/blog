@@ -8,8 +8,8 @@ before_script:
 - git config --global user.email "travis-ci@travis.org"
 - git config --global user.name "me via travis ci"
 - rm -rf output
-- git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io > /dev/null 2>&1
-  -b master output > /dev/null
+- git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io 
+  -b master output > /dev/null 2>&1
 script:
 - nikola clean
 - nikola build
