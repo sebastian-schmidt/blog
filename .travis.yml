@@ -8,7 +8,7 @@ before_script:
 - git config --global user.email "travis-ci@travis.org"
 - git config --global user.name "me via travis ci"
 - rm -rf output
-- git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io
+- git clone --quiet https://${GH_TOKEN}@github.com/sebastian-schmidt/sebastian-schmidt.github.io > /dev/null 2>&1
   -b master output > /dev/null
 script:
 - nikola clean
@@ -17,6 +17,6 @@ after_success:
 - cd output
 - git add .
 - git commit -m "[ci skip] Update output from Travis CI"
-- git push origin master
+- git push --quiet origin master > /dev/null 2>&1
 
 
